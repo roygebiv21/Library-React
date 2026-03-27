@@ -1,8 +1,5 @@
 import React from "react";
-import Book from "./Book";
 import BestBooks from "./ui/BestBooks";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { books } from "../data";
 
 const Featured = () => {
   return (

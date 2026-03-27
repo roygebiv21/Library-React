@@ -3,13 +3,7 @@ import { Link } from "react-router-dom";
 import EmptyCart from "../assets/empty_cart.svg";
 
 const Cart = ({ cart, changeQuantity, removeItem, totals }) => {
-  const total = () => {
-    let price = 0;
-    cart.forEach((item) => {
-      price += +((item.salePrice || item.originalPrice) * item.quantity).toFixed(2);
-    });
-    return price;
-  };
+
   return (
     <div id="books__body">
       <main id="books__main">

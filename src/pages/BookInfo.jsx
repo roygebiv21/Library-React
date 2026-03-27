@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import Ratings from "../components/ui/Ratings";
 import Price from "../components/ui/Price";
@@ -7,15 +7,14 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Book from "../components/Book";
 
-  const BookInfo = ({ books, addToCart, cart }) => {
-    const { id } = useParams();
-    const book = books.find((book) => +book.id === +id);
-  
-    if (!book) return <div>Loading...</div>; 
+const BookInfo = ({ books, addToCart, cart }) => {
+  const { id } = useParams();
+  const book = books.find((book) => +book.id === +id);
+
+  if (!book) return <div>Loading...</div>;
 
   function addBookToCart(book) {
     addToCart(book);
-    setAdded(true);
   }
 
   function bookExistsOnCart() {

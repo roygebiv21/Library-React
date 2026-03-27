@@ -225,7 +225,8 @@ LANDING
 */
 
 #landing {
-  background-color: rgba(115, 66, 214, 0.1)
+  background-color: rgba(115, 66, 214, 0.1);
+  padding-bottom: 8vw;
 }
 
 header {
@@ -251,13 +252,7 @@ header {
 .header__img--wrapper img {
   width: 100%;
   height: auto;
-
-  /* Added this after the tutorial to 
-  show it over the wave on larger screens */
   z-index: 50;
-  
-  /* Added this after the tutorial to 
-  make landing page responsive on laptops */
   max-height: 50vh;
 }
 

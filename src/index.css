@@ -248,8 +248,9 @@ header {
   align-items: center;
 }
 
-.header__img--wrapper {
-  padding: 20px;
+.header__img--wrapper img {
+  width: 100%;
+  height: auto;
 
   /* Added this after the tutorial to 
   show it over the wave on larger screens */
